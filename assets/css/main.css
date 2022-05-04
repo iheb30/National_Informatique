@@ -11,6 +11,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100); body { font-family: 'Roboto', sans-serif!important; } 
+
+
 :root {
   scroll-behavior: smooth;
 }
@@ -424,7 +429,8 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
-  font-family: var(--font-secondary);
+  /* font-family: var(--font-secondary); */
+  
   font-size: 16px;
   font-weight: 400;
   color: #AAAAAA;
