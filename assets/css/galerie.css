@@ -48,6 +48,12 @@
   }
 }
 
+@media screen and (min-width: 1984px){
+#responsive-laptop {
+  height: 1050px!important;
+}
+}
+
 /* element.style{
     position:relative;
     left:0;
@@ -68,6 +74,7 @@
 }
 
 
+
 /* #fi-card.col-lg-4.col-md-6.portfolio-item.filter-app element-style{
   position: relative;
   left: 0;
@@ -83,7 +90,7 @@
   max-height: 80px;
 } */
 
-
+/* 
 #footer .footer-top .footer-contact p a {
   color: rgba(255,255,255,0.7)
 }
@@ -113,7 +120,6 @@
       text-align:center;
       grid-area: copyr;
       margin-left: auto;
-      /* line-height: ; */
   }
   .pt-md-0 {
       grid-area: logo;
@@ -137,12 +143,12 @@
       .col-lg-3{
       width: 23%;
       }
-  }
+  } */
 
 
 /* footer prenant en compte le logo en haut */
 
-.town{
+/* .town{
   position: relative;
   left: 50px;
 }
@@ -176,4 +182,117 @@
 
 #footer .footer-newsletter {
   margin: 50px 0;
+} */
+
+/*************** footer **********************/
+
+/* #footer img {
+  float: left;
+  max-height: 80px;
+} */
+
+@media screen AND (min-width: 768px) {
+  .d-md-flex{
+      display: block !important;
+  }
+  .text-md-start {
+      text-align: center !important;
+  }
+}
+
+
+@media screen AND (min-width: 930px) {
+  .d-md-flex{
+      display:grid !important;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "empty copyr logo";
+  }
+
+  .text-md-start {
+      text-align:center;
+      grid-area: copyr;
+      margin-left: auto;
+      /* line-height: ; */
+  }
+  .pt-md-0 {
+      grid-area: logo;
+      margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 992px){
+footer .row {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 90%;
+}
+.col-lg-1{
+  width: 33%;
+}
+.col-lg-2{
+  width: 22%;
+}
+}
+
+
+.footer-logo {
+float: left;
+max-height: 80px;
+padding: 10px;
+}
+
+.coordonnée {
+height: 45px;
+width: 45px;
+}
+
+footer a {
+color: var(--color-white);
+}
+
+@media screen and (max-width: 991px){
+#footer .container {
+  max-width: 720px;
+}
+}
+@media screen and (min-width: 1041px){
+#footer .container {
+  width: 95%;
+}
+}
+
+
+/* footer prenant en compte le logo en haut */
+
+.town{
+position: relative;
+left: 50px;
+}
+
+#footer .footer-top .footer-contact {
+margin-bottom: 0;
+}
+
+.footer-logo {
+float:none;
+padding: 0;
+max-height: 170px;
+}
+
+#footer .footer-top .footer-contact p {
+position: relative;
+bottom: 40px;
+}
+
+#footer .footer-top {
+padding: 0;
+}
+
+#footer .footer-top .footer-links {
+margin: 50px 0;
+}
+
+#footer .footer-newsletter {
+margin: 50px 0;
 }
